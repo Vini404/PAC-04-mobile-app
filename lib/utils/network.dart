@@ -63,4 +63,10 @@ class Newtwork  {
     return RegExp(r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
     .hasMatch(email); 
   }
+
+  static bool ValidadeRegister(String nome, String telefone, String email, String senha){
+    if(nome != '' || telefone != '' || email != '' || senha != ''){
+      return false;
+    }
+  }
 }
